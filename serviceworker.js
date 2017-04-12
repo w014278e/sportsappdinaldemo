@@ -4,7 +4,10 @@ var TEMP_IMAGE_CACHE_NAME = 'temp-cache-v1';
 var newsAPIJSON = "https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5";
 var CACHED_URLS = [
  // HTML
-   BASE_PATH + 'index.html',
+    BASE_PATH + 'index.html',
+    BASE_PATH + 'news.html',
+    BASE_PATH + 'results.html',
+    BASE_PATH + 'feedback.html',
    
     
     
@@ -28,26 +31,34 @@ var CACHED_URLS = [
     BASE_PATH + 'images/icons/ms-icon-150x150.png',
     BASE_PATH + 'images/icons/ms-icon-310x310.png',
     BASE_PATH + 'images/icons/favicon.ico',
+    BASE_PATH + 'images/eventsimages/event-default.png',
+    BASE_PATH + 'images/news-default.jpg',
+    BASE_PATH + 'images/offlinemap.jpg',
+    BASE_PATH + 'images/eventsimages/article1.jpg',
+    BASE_PATH + 'images/eventsimages/article2.jpg',
+    BASE_PATH + 'images/eventsimages/article3.jpg',
+    BASE_PATH + 'images/eventsimages/article4.jpg',
+    BASE_PATH + 'images/eventsimages/article5.jpg',
+    BASE_PATH + 'images/eventsimages/article6.jpg',
     
      
     // JavaScript
     BASE_PATH + 'offline-map.js',
     BASE_PATH + 'menu.js',
     BASE_PATH + 'material.js',
+    BASE_PATH + 'scripts.js',
     // Manifest
     BASE_PATH + 'manifest.json',
+    BASE_PATH + 'events.json',
   // CSS and fonts
     'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en',
     'https://fonts.googleapis.com/icon?family=Material+Icons',
     BASE_PATH + 'min-style.css',
     BASE_PATH + 'styles.css',
-    BASE_PATH + 'appimages/event-default.png',
-BASE_PATH + 'scripts.js',
-BASE_PATH + 'events.json',
-    BASE_PATH + 'news.html',
-    BASE_PATH + 'results.html',
-    BASE_PATH + 'feedback.html',
-BASE_PATH + 'appimages/news-default.jpg' 
+   
+
+
+
   
 ];
 
@@ -135,7 +146,7 @@ self.addEventListener('fetch', function(event) {
             cache.put(event.request, networkResponse.clone());
             return networkResponse;
           }).catch(function() {
-            return cache.match('appimages/event-default.png');
+            return cache.match('images/eventsimages/event-default.png');
           });
         });
       })
@@ -149,7 +160,7 @@ self.addEventListener('fetch', function(event) {
             cache.put(event.request, networkResponse.clone());
             return networkResponse;
           }).catch(function() {
-            return cache.match('appimages/news-default.jpg');
+            return cache.match('images/eventsimages/event-default.png');
           });
         });
       })
