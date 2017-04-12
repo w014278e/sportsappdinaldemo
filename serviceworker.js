@@ -6,27 +6,25 @@ var currentCache = {
     BASE_PATH + 'first.html',
     
     // Images for favicons
-    BASE_PATH + 'appimages/android-icon-36x36.png',
-    BASE_PATH + 'appimages/android-icon-48x48.png',
-    BASE_PATH + 'appimages/android-icon-72x72.png',
-    BASE_PATH + 'appimages/android-icon-96x96.png',
-    BASE_PATH + 'appimages/android-icon-144x144.png',
-    BASE_PATH + 'appimages/android-icon-192x192.png',
-    BASE_PATH + 'appimages/favicon-32x32.png',
+    BASE_PATH + 'images/icons/android-icon-36x36.png',
+    BASE_PATH + 'images/icons/android-icon-48x48.png',
+    BASE_PATH + 'images/icons/android-icon-72x72.png',
+    BASE_PATH + 'images/icons/android-icon-96x96.png',
+    BASE_PATH + 'images/icons/android-icon-144x144.png',
+    BASE_PATH + 'images/icons/android-icon-192x192.png',
+    BASE_PATH + 'images/icons/favicon-32x32.png',
 
     //Images for page
     BASE_PATH + 'appimages/offlinemap.jpg',
-    BASE_PATH + 'appimages/dino.png',
-    BASE_PATH + 'appimages/jack.jpg',
-    BASE_PATH + 'appimages/paddy.jpg',
-    BASE_PATH + 'appimages/favicon.ico',
-    BASE_PATH + 'appimages/favicon-16x16.png',
-    BASE_PATH + 'appimages/favicon-32x32.png',
-    BASE_PATH + 'appimages/favicon-96x96.png',
-    BASE_PATH + 'appimages/ms-icon-70x70.png',
-    BASE_PATH + 'appimages/ms-icon-144x144.png',
-    BASE_PATH + 'appimages/ms-icon-150x150.png',
-    BASE_PATH + 'appimages/ms-icon-310x310.png',
+   
+    BASE_PATH + 'images/icons/favicon.ico',
+    BASE_PATH + 'images/icons/favicon-16x16.png',
+    BASE_PATH + 'images/icons/favicon-32x32.png',
+    BASE_PATH + 'images/icons/favicon-96x96.png',
+    BASE_PATH + 'images/icons/ms-icon-70x70.png',
+    BASE_PATH + 'images/icons/ms-icon-144x144.png',
+    BASE_PATH + 'images/icons/ms-icon-150x150.png',
+    BASE_PATH + 'images/icons/ms-icon-310x310.png',
      
     // JavaScript
     BASE_PATH + 'offline-map.js',
