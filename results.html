@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SportsWeb - Results</title>
+    <meta http-equiv=X-UA-Compatible content="IE=edge">
+    <meta name=description content="This a Demo Progressive Web Application which will work in offline, has a splash screen add to home screen etc,.">
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="theme-color" content="#0288d1">
+    <meta name="msapplication-TileColor" content="#0288d1">
+    <meta name="msapplication-TileImage" content="./images/icons/mstile-150x150.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="MyTV">
+    <meta name="application-name" content="MyTV">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/icons//apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="images/icons//apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700">
+      <meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./styles.css">
+   
+  </head>
+  <body>
+  <div class="app app__layout">
+    <header>
+      <span class="header__icon">
+        <svg class="menu__icon no--select" width="24px" height="24px" viewBox="0 0 48 48" fill="#fff">
+          <path d="M6 36h36v-4H6v4zm0-10h36v-4H6v4zm0-14v4h36v-4H6z"></path>
+        </svg>
+      </span>
+
+      <span class="header__title no--select">SportsWeb</span>
+    </header>
+
+    <div class="menu">
+      <div class="menu__header">
+          
+        </div>
+      <ul class="menu__list">
+        <li>
+          <a target="_blank" rel="noopener" href="https://github.com/gokulkrishh">Home</a>
+        </li>
+        <li>
+          <a target="_blank" rel="noopener" href="https://github.com/gokulkrishh/demo-progressive-web-app">Results</a>
+        </li>
+           <li>
+          <a target="_blank" rel="noopener" href="https://github.com/gokulkrishh/demo-progressive-web-app">Next games</a>
+        </li>
+           <li>
+          <a target="_blank" rel="noopener" href="https://github.com/gokulkrishh/demo-progressive-web-app">Feedback</a>
+        </li>
+      </ul>
+    </div>
+    <div class="menu__overlay"></div>
+
+    <div class="app__content">
+    <h1>Results</h1>
+         <div id="masthead-nav">
+      <a href="#football-league" class="nav-item top-stories">Football League</a>
+      <a href="#cricket" class="nav-item sports">Cricket</a>
+      <a href="#rugby" class="nav-item rugby">Rugby</a>
+      <a href="#formula1" class="nav-item formula1">Formula 1</a>
+     
+    </div>
+
+        <hr>
+
+<table summary="The standings in the Hampshire Colleges' Under 19 
+Football League as of 9th November 2005." class="league-table">
+<caption>Hampshire Colleges' Under 19 League</caption>
+<tbody>
+  <tr>
+    <th></th>
+    <th scope="col" id="played"><abbr title="Matches 
+played">P</abbr></th>
+    <th scope="col" id="won"><abbr title="Matches 
+won">W</abbr></th>
+    <th scope="col" id="drawn"><abbr title="Matches 
+drawn">D</abbr></th>
+    <th scope="col" id="lost"><abbr title="Matches 
+Lost">L</abbr></th>
+    <th scope="col" id="goals-for"><abbr title="Goals 
+scored">F</abbr></th>
+    <th scope="col" id="goals-against"><abbr title="Goals 
+conceded">A</abbr></th>
+    <th scope="col" id="points"><abbr  
+title="Points">Pts</abbr></th>
+  </tr>
+  <tr class="alt-row">
+    <th scope="row" id="team-bcot"><abbr title="Basingstoke College of Technology">BCOT</abbr></th>
+    <td headers="played team-bcot">5</td>
+    <td headers="won team-bcot">5</td>
+    <td headers="drawn team-bcot">0</td>
+    <td headers="lost team-bcot">0</td>
+    <td headers="goals-for team-bcot">22</td>
+    <td headers="goals-against team-bcot">4</td>
+    <td headers="points team-bcot">15</td>
+  </tr>
+  <tr class="highlighted-row">
+    <th scope="row" id="team-alton">Alton</th>
+    <td headers="played team-alton">6</td>
+    <td headers="won team-alton">5</td>
+    <td headers="drawn team-alton">0</td>
+    <td headers="lost team-alton">1</td>
+    <td headers="goals-for team-alton">22</td>
+    <td headers="goals-against team-alton">9</td>
+    <td headers="points team-alton">15</td>
+  </tr>
+  <tr class="alt-row">
+    <th scope="row" id="team-tauntons">Tauntons</th>
+    <td headers="played team-tauntons">4</td>
+    <td headers="won team-tauntons">4</td>
+    <td headers="drawn team-tauntons">0</td>
+    <td headers="lost team-tauntons">0</td>
+    <td headers="goals-for team-tauntons">25</td>
+    <td headers="goals-against team-tauntons">3</td>
+    <td headers="points team-tauntons">12</td>
+  </tr>
+  <tr>
+    <th scope="row" id="team-itchen">Itchen</th>
+    <td headers="played team-itchen">5</td>
+    <td headers="won team-itchen">4</td>
+    <td headers="drawn team-itchen">0</td>
+    <td headers="lost team-itchen">1</td>
+    <td headers="goals-for team-itchen">22</td>
+    <td headers="goals-against team-itchen">9</td>
+    <td headers="points team-itchen">12</td>
+  </tr>
+  <tr class="alt-row">
+    <th scope="row" id="team-barton">Barton Peveril</th>
+    <td headers="played team-barton">4</td>
+    <td headers="won team-barton">4</td>
+    <td headers="drawn team-barton">0</td>
+    <td headers="lost team-barton">0</td>
+    <td headers="goals-for team-barton">16</td>
+    <td headers="goals-against team-barton">6</td>
+    <td headers="points team-barton">12</td>
+  </tr>
+  <tr>
+    <th scope="row" id="team-totton">Totton</th>
+    <td headers="played team-totton">6</td>
+    <td headers="won team-totton">3</td>
+    <td headers="drawn team-totton">1</td>
+    <td headers="lost team-totton">2</td>
+    <td headers="goals-for team-totton">22</td>
+    <td headers="goals-against team-totton">12</td>
+    <td headers="points team-totton">10</td>
+  </tr>
+  <tr class="alt-row">
+    <th scope="row" id="team-st">St Vincent</th>
+    <td headers="played team-st">6</td>
+    <td headers="won team-st">3</td>
+    <td headers="drawn team-st">0</td>
+    <td headers="lost team-st">3</td>
+    <td headers="goals-for team-st">24</td>
+    <td headers="goals-against team-st">16</td>
+    <td headers="points team-st">9</td>
+  </tr>
+  <tr>
+    <th scope="row" id="team-farnborough">Farnborough</th>
+    <td headers="played team-farnborough">6</td>
+    <td headers="won team-farnborough">3</td>
+    <td headers="drawn team-farnborough">0</td>
+    <td headers="lost team-farnborough">3</td>
+    <td headers="goals-for team-farnborough">10</td>
+    <td headers="goals-against team-farnborough">11</td>
+    <td headers="points team-farnborough">9</td>
+  </tr>
+  <tr class="alt-row">
+    <th scope="row" id="team-poole"><abbr title="Poole Grammar School">Poole GS</abbr></th>
+    <td headers="played team-poole">5</td>
+    <td headers="won team-poole">2</td>
+    <td headers="drawn team-poole">1</td>
+    <td headers="lost team-poole">2</td>
+    <td headers="goals-for team-poole">13</td>
+    <td headers="goals-against team-poole">13</td>
+    <td headers="points team-poole">7</td>
+  </tr>
+  <tr>
+    <th scope="row" id="team-cricklade">Cricklade</th>
+    <td headers="played team-cricklade">6</td>
+    <td headers="won team-cricklade">2</td>
+    <td headers="drawn team-cricklade">0</td>
+    <td headers="lost team-cricklade">4</td>
+    <td headers="goals-for team-cricklade">9</td>
+    <td headers="goals-against team-cricklade">20</td>
+    <td headers="points team-cricklade">6</td>
+  </tr>
+  <tr class="alt-row">
+    <th scope="row" id="team-havant">Havant</th>
+    <td headers="played team-havant">5</td>
+    <td headers="won team-havant">1</td>
+    <td headers="drawn team-havant">1</td>
+    <td headers="lost team-havant">3</td>
+    <td headers="goals-for team-havant">8</td>
+    <td headers="goals-against team-havant">13</td>
+    <td headers="points team-havant">4</td>
+  </tr>
+  <tr>
+    <th scope="row" id="team-portsmouth">Portsmouth</th>
+    <td headers="played team-portsmouth">5</td>
+    <td headers="won team-portsmouth">1</td>
+    <td headers="drawn team-portsmouth">1</td>
+    <td headers="lost team-portsmouth">3</td>
+    <td headers="goals-for team-portsmouth">7</td>
+    <td headers="goals-against team-portsmouth">22</td>
+    <td headers="points team-portsmouth">4</td>
+  </tr>
+  <tr class="alt-row">
+    <th scope="row" id="team-bournemouth">Bournemouth</th>
+    <td headers="played team-bournemouth">4</td>
+    <td headers="won team-bournemouth">1</td>
+    <td headers="drawn team-bournemouth">0</td>
+    <td headers="lost team-bournemouth">3</td>
+    <td headers="goals-for team-bournemouth">9</td>
+    <td headers="goals-against team-bournemouth">17</td>
+    <td headers="points team-bournemouth">3</td>
+  </tr>
+  <tr>
+    <th scope="row" id="team-qm">Queen Mary&#8217;s</th>
+    <td headers="played team-qm">4</td>
+    <td headers="won team-qm">1</td>
+    <td headers="drawn team-qm">0</td>
+    <td headers="lost team-qmn">3</td>
+    <td headers="goals-for team-qm">7</td>
+    <td headers="goals-against team-qm">14</td>
+    <td headers="points team-qm">3</td>
+  </tr>
+  <tr class="alt-row">
+    <th scope="row" id="team-ps">Peter Symonds</th>
+    <td headers="played team-ps">4</td>
+    <td headers="won team-psr">1</td>
+    <td headers="drawn team-ps">0</td>
+    <td headers="lost team-ps">3</td>
+    <td headers="goals-for team-ps">10</td>
+    <td headers="goals-against team-ps">19</td>
+    <td headers="points team-ps">3</td>
+  </tr>
+  <tr>
+    <th scope="row" id="team-fareham">Fareham</th>
+    <td headers="played team-fareham">4</td>
+    <td headers="won team-fareham">0</td>
+    <td headers="drawn team-fareham">2</td>
+    <td headers="lost team-fareham">2</td>
+    <td headers="goals-for team-fareham">2</td>
+    <td headers="goals-against team-fareham">11</td>
+    <td headers="points team-fareham">2</td>
+  </tr>
+  <tr class="alt-row">
+    <th scope="row" id="team-brockenhurst">Brockenhurst</th>
+    <td headers="played team-brockenhurst">4</td>
+    <td headers="won team-brockenhurst">0</td>
+    <td headers="drawn team-brockenhurst">1</td>
+    <td headers="lost team-brockenhurst">3</td>
+    <td headers="goals-for team-brockenhurst">3</td>
+    <td headers="goals-against team-brockenhurst">11</td>
+    <td headers="points team-brockenhurst">1</td>
+  </tr>
+  <tr>
+    <th scope="row" id="team-south">South Downs</th>
+    <td headers="played team-south">6</td>
+    <td headers="won team-south">0</td>
+    <td headers="drawn team-south">1</td>
+    <td headers="lost team-south">5</td>
+    <td headers="goals-for team-south">3</td>
+    <td headers="goals-against team-south">15</td>
+    <td headers="points team-south">1</td>
+  </tr>
+</tbody>
+</table>
+        
+    </div>
+    
+    
+    </div>
+
+
+  <!-- JS Files  -->
+ 
+  <script src="menu.js"></script>
+
+  
+  </body>
+</html>
