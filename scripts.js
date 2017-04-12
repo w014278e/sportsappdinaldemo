@@ -7,6 +7,8 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+// For JSON file to display on news page
+
 const eventsContainer = document.getElementById('events');
 if(eventsContainer){
     fetch("events.json")
@@ -34,7 +36,7 @@ if(eventsContainer){
         });
 }
 
-// For second page
+// For news API to display on homepage
 const newsContainer = document.getElementById('news');
 if(newsContainer){
     fetch("https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5")
