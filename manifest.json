@@ -1,7 +1,7 @@
 {
- "name": "MyTV",
-    "short_name": "MyTV",
-    "description": "An app allowing you to set reminders for your favourite TV shows",
+ "name": "SportsUK",
+    "short_name": "SportsUK",
+    "description": "An app allowing you see the latest sports news, including latest league tables",
   "start_url": "./index.html?utm=homescreen",
   "display": "standalone",
   "orientation": "portrait",

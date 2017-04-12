@@ -19,7 +19,7 @@ if(eventsContainer){
                         <img class="article-image" src="${event.picture}" border="0" alt="">
                     </div>
                     <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">${event.heading}</h2>
+                        <h2 class="mdl-card__title-text">${event.headline}</h2>
                     </div>
                     <div class="mdl-card__supporting-text">
                         ${event.text}
