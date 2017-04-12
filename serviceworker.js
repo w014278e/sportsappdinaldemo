@@ -44,7 +44,9 @@ var CACHED_URLS = [
     BASE_PATH + 'styles.css',
 BASE_PATH + 'scripts.js',
 BASE_PATH + 'events.json',
-     BASE_PATH + 'second.html',
+     BASE_PATH + 'news.html',
+     BASE_PATH + 'results.html',
+     BASE_PATH + 'feedback.html',
 BASE_PATH + 'appimages/news-default.jpg' 
   
 ];
@@ -63,24 +65,24 @@ self.addEventListener('install', function(event) {
 self.addEventListener('fetch', function(event) {
   var requestURL = new URL(event.request.url);
   // Handle requests for index.html
-  if (requestURL.pathname === BASE_PATH + 'first.html') {
+  if (requestURL.pathname === BASE_PATH +'index.html') {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
-        return cache.match('first.html').then(function(cachedResponse) {
-          var fetchPromise = fetch('first.html').then(function(networkResponse) {
-            cache.put('first.html', networkResponse.clone());
+        return cache.match('news.html').then(function(cachedResponse) {
+          var fetchPromise = fetch('news.html').then(function(networkResponse) {
+            cache.put('news.html', networkResponse.clone());
             return networkResponse;
           });
           return cachedResponse || fetchPromise;
         });
       })
     );
-       } else if (requestURL.pathname === BASE_PATH + 'second.html') {
+       } else if (requestURL.pathname === BASE_PATH + 'results.html') {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
-        return cache.match('second.html').then(function(cachedResponse) {
-          var fetchPromise = fetch('second.html').then(function(networkResponse) {
-            cache.put('second.html', networkResponse.clone());
+        return cache.match('results.html').then(function(cachedResponse) {
+          var fetchPromise = fetch('results.html').then(function(networkResponse) {
+            cache.put('results.html', networkResponse.clone());
             return networkResponse;
           });
           return cachedResponse || fetchPromise;
