@@ -32,21 +32,21 @@ var CACHED_URLS = [
      
     // JavaScript
     BASE_PATH + 'offline-map.js',
-    
     BASE_PATH + 'menu.js',
     BASE_PATH + 'material.js',
     // Manifest
     BASE_PATH + 'manifest.json',
   // CSS and fonts
-    'https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700',
-    
-    BASE_PATH + 'min-style.css'
+    'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en',
+    'https://fonts.googleapis.com/icon?family=Material+Icons',
+    BASE_PATH + 'min-style.css',
     BASE_PATH + 'styles.css',
+    BASE_PATH + 'appimages/event-default.png',
 BASE_PATH + 'scripts.js',
 BASE_PATH + 'events.json',
-     BASE_PATH + 'news.html',
-     BASE_PATH + 'results.html',
-     BASE_PATH + 'feedback.html',
+    BASE_PATH + 'news.html',
+    BASE_PATH + 'results.html',
+    BASE_PATH + 'feedback.html',
 BASE_PATH + 'appimages/news-default.jpg' 
   
 ];

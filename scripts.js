@@ -7,8 +7,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-// For JSON file to display on news page
-
 const eventsContainer = document.getElementById('events');
 if(eventsContainer){
     fetch("events.json")
@@ -36,10 +34,10 @@ if(eventsContainer){
         });
 }
 
-// For news API to display on homepage
+// For second page
 const newsContainer = document.getElementById('news');
 if(newsContainer){
-    fetch("https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5")
+    fetch("https://newsapi.org/v1/articles?source=bbc-news&apiKey=c0d26668d2dd4049bfd66155dde340b3")
         .then(response => {
             return response.json();
         }).then(news => {
@@ -64,19 +62,19 @@ if(newsContainer){
         });
 }
 
-const feedback = document.getElementById("feedbackForm");
-if(feedback){
-    const feedbackSubmit = e => {
+const askJack = document.getElementById("askJackForm");
+if(askJack){
+    const askJackFormSubmit = e => {
         e.preventDefault();
         const contact = {
             "name": e.target.name.value,
             "email": e.target.email.value,
-            "message": e.target.question.value,
+            "question": e.target.question.value,
         };
 
         fetch("https://fi67.github.io/dfm/index.html", {mode: "no-cors", method: "POST", body: contact})
             .then(response => {
-                console.log('Responses:!', response);
+                console.log('hello response!', response);
             }).catch(() => {
                 let allContacts = [];
 
@@ -89,5 +87,5 @@ if(feedback){
                 localStorage.setItem('contact', JSON.stringify(allContacts));
             });
     };
-    feedback.addEventListener('submit', feedbackSubmit, false);
+    askJack.addEventListener('submit', askJackFormSubmit, false);
 }
