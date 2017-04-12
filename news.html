@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>SportsWorld - News</title>
+    <title>SportsUK - News</title>
     <meta http-equiv=X-UA-Compatible content="IE=edge">
     <meta name=description content="SportsUK">
     <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=no">
@@ -74,15 +74,16 @@
     <h1>News</h1>
         <div id="events" class="mdl-grid portfolio-max-width">
 <p>Refresh or connect to the internet to view latest headlines.</p>
+             
 </div>
         <h4>Next Game</h4>
         <p>Sat 12 April 2015<p>
         <div id="map-container" style="height: 300px;"></div>
                 <script>
                 function initMap() {
-                    var myLocation = {lat: 53.0103798, lng: -2.1801833};
+                    var myLocation = {lat: 51.5567009, lng: -0.2796655};
                     var map = new google.maps.Map(document.getElementById('map-container'), {
-                    zoom: 2,
+                    zoom: 13,
                     center: myLocation
                     });
                     var marker = new google.maps.Marker({
@@ -94,8 +95,14 @@
                 <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2tEW34uzw_cERZpVvTI1blKDJLSJ6sh8&callback=initMap">
                 </script>
+        <p id="copyrightarticle">News Articles &copy BBC Sports News</p>
         <footer>
-            <p>News Articles &copy BBC Sports News</p>
+             <ul>
+             <li class="footerLinks"><a href="index.html">Home</a></li>   
+             <li class="footerLinks"><a href="news.html">News</a></li>
+              <li class="footerLinks"><a href="results.html">Results</a></li>
+            <li class="footerLinks"><a href="feedback.html">Feedback</a></li>
+            </ul>
         </footer>
     </div>
     

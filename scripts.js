@@ -62,9 +62,9 @@ if(newsContainer){
         });
 }
 
-const askJack = document.getElementById("askJackForm");
-if(askJack){
-    const askJackFormSubmit = e => {
+const feedback = document.getElementById("feedbackForm");
+if(feedback){
+    const feedbackFormSubmit = e => {
         e.preventDefault();
         const contact = {
             "name": e.target.name.value,
@@ -72,9 +72,9 @@ if(askJack){
             "question": e.target.question.value,
         };
 
-        fetch("https://fi67.github.io/dfm/index.html", {mode: "no-cors", method: "POST", body: contact})
+        fetch("https://w014278e.github.io/sportsappdinaldemo/feedback.html", {mode: "no-cors", method: "POST", body: contact})
             .then(response => {
-                console.log('hello response!', response);
+                console.log('Responses', response);
             }).catch(() => {
                 let allContacts = [];
 
@@ -87,5 +87,5 @@ if(askJack){
                 localStorage.setItem('contact', JSON.stringify(allContacts));
             });
     };
-    askJack.addEventListener('submit', askJackFormSubmit, false);
+    feedback.addEventListener('submit', feedbackFormSubmit, false);
 }

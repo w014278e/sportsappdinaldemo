@@ -217,14 +217,14 @@ header {
 footer {
     background-color:#D6751E;
     color:white;
-   height:80px;
+   height:60px;
     
     text-align:center;
 }
 
 .footerLinks {
     display:inline-block;
-    padding-top:20px;
+    padding-top:15px;
     padding-left:5px;
 }
 
@@ -233,8 +233,55 @@ a:link {
 }
 
 #copyrightarticle {
-    padding-top:30px;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+#feedback {
     padding-bottom:20px;
+}
+
+
+
+#feedbackForm label {
+	display: block;
+   
+}
+
+form {
+   
+    display: inline-block;
+    text-align: center;
+    padding-bottom:50px;
+    
+
+}
+
+#feedbackForm input[type=text], #feedbackForm input[type=email] {
+	
+	margin-bottom: 10px;
+	width: 100%;
+	
+	border: 1px solid #D6751E;
+    margin-bottom: 6px;
+    padding: 5px !important;
+	
+	font-size: 0.9em;
+ 
+    
+}
+
+#feedbackForm textarea {
+	
+	margin-bottom: 10px;
+	width: 100%;
+	
+	border: 1px solid #D6751E;
+    margin-bottom: 6px;
+    padding: 5px !important;
+	
+	font-size: 0.9em;
+  
 }
 
 
@@ -335,8 +382,12 @@ img.article-image {
   background-size: cover;
   background-position: center;
   background-image: url('images/offlinemap.jpg');
+    padding-bottom:20px;
 }
 
+#map-container {
+    padding-bottom:60px;
+}
 
 
 table {
@@ -379,11 +430,48 @@ th[scope="row"] {
  
 
  @media only screen 
-  and (min-device-width: 768px) 
+  and (min-device-width: 320px) 
+     and (max-device-width: 480px) 
+         
   {
       
       body {
           max-width:100%;
       }
       
+      
+
+label {
+	float:left;
+}
+
+#feedbackForm input[type=text], #feedbackForm input[type=email] {
+	
+	margin-bottom: 10px;
+	max-width: 100%;
+	
+	
+    margin-bottom: 6px;
+    padding: 5px !important;
+	
+	font-size: 0.9em;
+ 
+    
+}
+
+#feedbackForm textarea {
+	
+	margin-bottom: 10px;
+	width: 100%;
+	
+	
+    margin-bottom: 6px;
+    padding: 5px !important;
+	
+	font-size: 0.9em;
+  
+}
+	  
   }
+      
+  
