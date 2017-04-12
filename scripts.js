@@ -69,7 +69,7 @@ if(feedback){
         const contact = {
             "name": e.target.name.value,
             "email": e.target.email.value,
-            "question": e.target.question.value,
+            "message": e.target.message.value,
         };
 
         fetch("https://w014278e.github.io/sportsappdinaldemo/feedback.html", {mode: "no-cors", method: "POST", body: contact})
