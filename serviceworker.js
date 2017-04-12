@@ -5,9 +5,7 @@ var newsAPIJSON = "https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&a
 var CACHED_URLS = [
  // HTML
    BASE_PATH + 'index.html',
-    BASE_PATH + 'news.html',
-    BASE_PATH + 'results.html',
-    BASE_PATH + 'feedback.html',
+   
     
     
     // Images for favicons
@@ -33,6 +31,8 @@ var CACHED_URLS = [
     
      
     // JavaScript
+    BASE_PATH + 'offline-map.js',
+    
     BASE_PATH + 'menu.js',
     BASE_PATH + 'material.js',
     // Manifest
@@ -40,11 +40,16 @@ var CACHED_URLS = [
   // CSS and fonts
     'https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700',
     
+    BASE_PATH + 'min-style.css'
     BASE_PATH + 'styles.css',
 BASE_PATH + 'scripts.js',
 BASE_PATH + 'events.json',
+     BASE_PATH + 'second.html',
+BASE_PATH + 'appimages/news-default.jpg' 
   
 ];
+
+var googleMapsAPIJS = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD2tEW34uzw_cERZpVvTI1blKDJLSJ6sh8&callback=initMap';
 
 self.addEventListener('install', function(event) {
   // Cache everything in CACHED_URLS. Installation fails if anything fails to cache
@@ -58,24 +63,24 @@ self.addEventListener('install', function(event) {
 self.addEventListener('fetch', function(event) {
   var requestURL = new URL(event.request.url);
   // Handle requests for index.html
-  if (requestURL.pathname === BASE_PATH + 'index.html') {
+  if (requestURL.pathname === BASE_PATH + 'first.html') {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
-        return cache.match('index.html').then(function(cachedResponse) {
-          var fetchPromise = fetch('index.html').then(function(networkResponse) {
-            cache.put('offline.html', networkResponse.clone());
+        return cache.match('first.html').then(function(cachedResponse) {
+          var fetchPromise = fetch('first.html').then(function(networkResponse) {
+            cache.put('first.html', networkResponse.clone());
             return networkResponse;
           });
           return cachedResponse || fetchPromise;
         });
       })
     );
-       } else if (requestURL.pathname === BASE_PATH + 'news.html') {
+       } else if (requestURL.pathname === BASE_PATH + 'second.html') {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
-        return cache.match('index.html').then(function(cachedResponse) {
-          var fetchPromise = fetch('index.html').then(function(networkResponse) {
-            cache.put('index.html', networkResponse.clone());
+        return cache.match('second.html').then(function(cachedResponse) {
+          var fetchPromise = fetch('second.html').then(function(networkResponse) {
+            cache.put('second.html', networkResponse.clone());
             return networkResponse;
           });
           return cachedResponse || fetchPromise;
@@ -84,6 +89,16 @@ self.addEventListener('fetch', function(event) {
     );
 
       
+ // Handle requests for Google Maps JavaScript API file
+  } else if (requestURL.href === googleMapsAPIJS) {
+    event.respondWith(
+      fetch(
+        googleMapsAPIJS+'&'+Date.now(),
+        { mode: 'no-cors', cache: 'no-store' }
+      ).catch(function() {
+        return caches.match('offline-map.js');
+      })
+    );
       
     // Handle requests for events JSON file
   } else if (requestURL.pathname === BASE_PATH + 'events.json') {
@@ -110,7 +125,7 @@ self.addEventListener('fetch', function(event) {
       })
     );
   // Handle requests for event images.
-  } else if (requestURL.pathname.includes('/images/eventsimages/')) {
+  } else if (requestURL.pathname.includes('/eventsimages/')) {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
         return cache.match(event.request).then(function(cacheResponse) {
@@ -118,7 +133,7 @@ self.addEventListener('fetch', function(event) {
             cache.put(event.request, networkResponse.clone());
             return networkResponse;
           }).catch(function() {
-            return cache.match('/images/eventsimages/event-default.png');
+            return cache.match('appimages/event-default.png');
           });
         });
       })
@@ -132,7 +147,7 @@ self.addEventListener('fetch', function(event) {
             cache.put(event.request, networkResponse.clone());
             return networkResponse;
           }).catch(function() {
-            return cache.match('/images/eventsimages/events-default.png');
+            return cache.match('appimages/news-default.jpg');
           });
         });
       })
