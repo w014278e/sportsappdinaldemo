@@ -31,6 +31,7 @@ body,
 p {
   margin: 0;
   padding: 0;
+   
 }
 
 a {
@@ -49,13 +50,6 @@ li {
   -ms-user-select: none;
   -webkit-user-select: none;
   user-select: none;
-}
-
-h3 {
-  text-align: left;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  font-weight: 500;
 }
 
 /* MAIN styles */
@@ -81,7 +75,7 @@ body {
 }
 
 header {
-  position: fixed;
+  position:absolute;
   width: 100%;
   height: 56px;
   top: 0;
@@ -102,7 +96,7 @@ header {
 }
 
 .app__offline {
-  background-color: #6b6b6b;
+  background-color: #ffffff;
 }
 
 .header__icon {
@@ -182,13 +176,15 @@ header {
 }
 
 .menu__header {
-  height: 150px;
+  
   background: #D6751E;
   color: #fff;
+  
   border-bottom: 1px solid #ddd;
 }
 
 .menu__list {
+    background: #D6751E;
   width: inherit;
   height: inherit;
   overflow: auto;
@@ -312,6 +308,15 @@ img.article-image {
     
 }
 
+#map-container.offline-map {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-image: url('images/offlinemap.jpg');
+}
+
 table {
   
   margin: 5px;
@@ -347,6 +352,8 @@ tr.alt-row {
 th[scope="row"] {
   text-align: left;
 }
+
+
  
 
  @media only screen 
