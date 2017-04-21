@@ -53,9 +53,6 @@ var CACHED_URLS = [
   // CSS and fonts
     'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en',
     'https://fonts.googleapis.com/icon?family=Material+Icons',
-   'https://code.jquery.com/jquery-1.11.3.min.js',
-    'https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js',
-    'https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css',
     BASE_PATH + 'min-style.css',
     BASE_PATH + 'styles.css',
    
