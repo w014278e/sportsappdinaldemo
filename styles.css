@@ -211,8 +211,13 @@ header {
   margin: 0 auto;
   margin-top: 56px;
   padding-top: 10px;
-    visibility: hidden;
    
+   
+}
+
+#content {
+    
+     visibility: hidden;
 }
 
 
