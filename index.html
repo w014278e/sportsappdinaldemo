@@ -39,7 +39,9 @@
     <link rel="stylesheet" href="styles.css">
    
   </head>
-  <body>
+  <body onload="loaded()">
+      <div id="loader"></div>
+     
   <div class="app app__layout">
     <header>
       <span class="header__icon">
@@ -73,6 +75,7 @@
     <div class="menu__overlay"></div>
 
     <div class="app__content">
+       
     <h1>Headlines</h1>
         <div id="news" class="mdl-grid portfolio-max-width">
             <p>Refresh or connect to the internet to view live sports updates and news.</p>
@@ -88,9 +91,13 @@
             <li class="footerLinks"><a href="feedback.html">Feedback</a></li>
             </ul>
         </footer>
+         
+          
+    
     
 
 <script async src="menu.js"></script>
+     
   
       <script async src="scripts.js"></script>
       </div>

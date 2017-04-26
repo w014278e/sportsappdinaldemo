@@ -89,3 +89,9 @@ if(feedback){
     };
     feedback.addEventListener('submit', feedbackFormSubmit, false);
 }
+
+//pre loader
+function loaded() {
+    
+    document.getElementById("loader").style.display= "none";
+    document.getElementById("app__content").style.visibility= "visible";
