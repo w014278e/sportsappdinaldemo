@@ -1,7 +1,7 @@
 var preloader;
 
 function myFunction() {
-    preloader = setTimeout(showPage, 3000);
+    preloader = setTimeout(showPage, 600);
 }
 
 function showPage() {
