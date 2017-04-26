@@ -1,5 +1,5 @@
 var BASE_PATH = '/sportsappdinaldemo/';
-var CACHE_NAME = 'bgPWA-v8';
+var CACHE_NAME = 'bgPWA-v9';
 var TEMP_IMAGE_CACHE_NAME = 'temp-cache-v1';
 var newsAPIJSON = "https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5";
 var CACHED_URLS = [
@@ -47,6 +47,7 @@ var CACHED_URLS = [
     BASE_PATH + 'menu.js',
     BASE_PATH + 'material.js',
     BASE_PATH + 'scripts.js',
+    BASE_PATH + 'preloader.js',
    
     // Manifest
     BASE_PATH + 'manifest.json',
