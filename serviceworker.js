@@ -1,7 +1,7 @@
 var BASE_PATH = '/sportsappdinaldemo/';
 var CACHE_NAME = 'bgPWA-v9';
 var TEMP_IMAGE_CACHE_NAME = 'temp-cache-v1';
-var newsAPIJSON = "https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5";
+var newsAPIJSON = "https://newsapi.org/v1/articles?source=talksport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5";
 var CACHED_URLS = [
  // HTML
     BASE_PATH + 'index.html',
@@ -64,7 +64,7 @@ var CACHED_URLS = [
   
 ];
 
-var googleMapsAPIJS = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyD2tEW34uzw_cERZpVvTI1blKDJLSJ6sh8&callback=initMap';
+var googleMapsAPIJS = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB4r037t9M4xqaHF8RR2p2mQqiWhgmeeAk&callback=initMap';
 
 self.addEventListener('install', function(event) {
   // Cache everything in CACHED_URLS. Installation fails if anything fails to cache
@@ -154,25 +154,7 @@ self.addEventListener('fetch', function(event) {
       })
     );
   // 
-  } else if (requestURL.href.includes('bbci.co.uk/sport/')) {
-    event.respondWith(
-      caches.open(TEMP_IMAGE_CACHE_NAME).then(function(cache) {
-        return cache.match(event.request).then(function(cacheResponse) {
-          return cacheResponse||fetch(event.request, {mode: 'no-cors'}).then(function(networkResponse) {
-            cache.put(event.request, networkResponse.clone());
-            return networkResponse;
-          }).catch(function() {
-            return cache.match('images/eventsimages/event-default.png');
-          });
-        });
-      })
-    );
-  
-
-      
-      
-      
-  } else if (
+  }  else if (
     CACHED_URLS.includes(requestURL.href) ||
     CACHED_URLS.includes(requestURL.pathname)
   ) {

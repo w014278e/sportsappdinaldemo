@@ -323,7 +323,7 @@ form {
 
 }
 
-#feedbackForm input[type=text], #feedbackForm input[type=email] {
+#feedbackForm input[type=text] {
 	
 	margin-bottom: 20px;
 	width: 100%;
@@ -521,36 +521,74 @@ th[scope="row"] {
 label {
 	float:left;
 }
+      
+      
 
-#feedbackForm input[type=text], #feedbackForm input[type=email] {
+#feedbackForm input[type=text]{
 	
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	max-width: 100%;
 	
 	
-    margin-bottom: 6px;
+   
     padding: 5px !important;
 	
 	font-size: 0.9em;
  
     
 }
-
-#feedbackForm textarea {
+      
+      #feedbackForm input[id=response] {
+          
+          height:50px;
+          
+          
+      }
+  }
+      
+      @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+ { 
+     #feedbackForm input {
+         width:100%;
+      
+  }
+     
+     #feedbackForm input[type=text]{
 	
-	margin-bottom: 10px;
-	width: 100%;
+	margin-bottom: 15px;
+	max-width: 100%;
 	
 	
-    margin-bottom: 6px;
+   
     padding: 5px !important;
 	
 	font-size: 0.9em;
-  
+ 
+    
 }
+     
+     
+     
+       #feedbackForm {
+          width:50%;
+          height:50px;
+          
+          
+          
+      }
+     
+     form {
+         padding-bottom:80px;
+     }
+     
+ }
+
+
       
      
 	  
-  }
+  
       
   

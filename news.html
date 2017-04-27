@@ -37,8 +37,8 @@
     <link rel="stylesheet" href="styles.css">
    
   </head>
- <body onload="myFunction()">
-       <div id="loader"></div>
+ <body>
+       
       
   <div class="app app__layout">
     <header>
@@ -73,7 +73,7 @@
     <div class="menu__overlay"></div>
 
     <div class="app__content">
-        <div id="appcontent" class="popup">
+        
     <h1>News</h1>
         <div id="events" class="mdl-grid portfolio-max-width">
 <p>Refresh or connect to the internet to view latest headlines.</p>
@@ -84,9 +84,9 @@
         <div id="map-container" style="height: 300px;"></div>
                 <script>
                 function initMap() {
-                    var myLocation = {lat: 51.5567009, lng: -0.2796655};
+                    var myLocation = {lat: 53.463059, lng: -2.291340};
                     var map = new google.maps.Map(document.getElementById('map-container'), {
-                    zoom: 13,
+                    zoom: 16,
                     center: myLocation
                     });
                     var marker = new google.maps.Marker({
@@ -96,7 +96,7 @@
                 }
                 </script>
                 <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2tEW34uzw_cERZpVvTI1blKDJLSJ6sh8&callback=initMap">
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4r037t9M4xqaHF8RR2p2mQqiWhgmeeAk&callback=initMap">
                 </script>
         <p id="copyrightarticle">News Articles &copy BBC Sports News</p>
         <footer>
@@ -107,7 +107,7 @@
             <li class="footerLinks"><a href="feedback.html">Feedback</a></li>
             </ul>
         </footer>
-        </div>
+        
       </div>
   
     

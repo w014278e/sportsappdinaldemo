@@ -37,7 +37,7 @@ if(eventsContainer){
 // For second page
 const newsContainer = document.getElementById('news');
 if(newsContainer){
-    fetch(" https://newsapi.org/v1/articles?source=bbc-sport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5")
+    fetch(" https://newsapi.org/v1/articles?source=talksport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5")
         .then(response => {
             return response.json();
         }).then(news => {
@@ -62,30 +62,32 @@ if(newsContainer){
         });
 }
 
-const feedback = document.getElementById("feedbackForm");
-if(feedback){
-    const feedbackFormSubmit = e => {
-        e.preventDefault();
-        const contact = {
-            "name": e.target.name.value,
-            "email": e.target.email.value,
-            "response": e.target.response.value,
-        };
+// localstorage form
+function html5_storage_support() {
+  		//check to see if this browser support local storage: return true if so, false if not
+		try {
+			return 'localStorage' in window && window['localStorage'] !== null;
+		} catch (e) {
+			return false;
+		}
+	}
+  	function save() {
+  		if (html5_storage_support()) {
+  			//get the user-entered values from the two text fields:
+  			var name = document.getElementById("name").value;
+  			var response = document.getElementById("response").value;
 
-        fetch("https://w014278e.github.io/sportsappdinaldemo/feedback.html", {mode: "no-cors", method: "POST", body: contact})
-            .then(response => {
-                console.log('Responses', response);
-            }).catch(() => {
-                let allContacts = [];
+  			//create two local-storage keys (name1, name2) and assign
+  			//each the respective value from the text fields:
+  			localStorage.setItem('name',name);
+  			localStorage.setItem('response',response);
+  		}
+  	}
 
-                const existingContacts = localStorage.getItem('contact');
-                if(existingContacts){
-                    allContacts = JSON.parse(existingContacts);
-                }
-
-                allContacts.push(contact);
-                localStorage.setItem('contact', JSON.stringify(allContacts));
-            });
-    };
-    feedback.addEventListener('submit', feedbackFormSubmit, false);
-}
+  	function set() {
+  		if (html5_storage_support()) {
+  			//set the value of each text field from the stored values:
+  			document.getElementById('name').value = localStorage.getItem('name');
+  			document.getElementById('response').value = localStorage.getItem('response');
+  		}
+  	}
