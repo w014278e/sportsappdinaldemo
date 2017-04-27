@@ -323,6 +323,7 @@ form {
 
 }
 
+
 #feedbackForm input[type=text] {
 	
 	margin-bottom: 20px;
@@ -336,6 +337,14 @@ form {
  
     
 }
+
+ #feedbackForm input[id=response] {
+          
+          height:50px;
+     
+          
+          
+      }
 
 #feedbackForm input[type=submit] {
     margin-top:50px;
@@ -568,6 +577,13 @@ label {
  
     
 }
+     
+      #feedbackForm input[id=response] {
+          
+          height:50px;
+          
+          
+      }
      
      
      
