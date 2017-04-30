@@ -75,7 +75,7 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-const eventsContainer = document.getElementById('events');
+const eventsContainer = document.getElementById('footballJSON');
 if(eventsContainer){
     fetch("events.json")
         .then(response => {
@@ -98,7 +98,7 @@ if(eventsContainer){
                 </div>`;
             }).join("\n");
             
-            eventsContainer.innerHTML = eventsHTML;
+            eventsContainer.innerHTML = footballJSONHTML;
         });
 }
 
