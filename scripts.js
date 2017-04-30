@@ -1,3 +1,71 @@
+//Hamburger menu
+(function () {
+  'use strict';
+
+  var menuIconElement = document.querySelector('.header__icon');
+  var menuElement = document.querySelector('.menu');
+  var menuOverlayElement = document.querySelector('.menu__overlay');
+
+  //Menu click event
+  menuIconElement.addEventListener('click', showMenu, false);
+  menuOverlayElement.addEventListener('click', hideMenu, false);
+  menuElement.addEventListener('transitionend', onTransitionEnd, false);
+
+   //To show menu
+  function showMenu() {
+  	menuElement.style.transform = "translateX(0)";
+    menuElement.classList.add('menu--show');
+    menuOverlayElement.classList.add('menu__overlay--show');
+  }
+
+  //To hide menu
+  function hideMenu() {
+  	menuElement.style.transform = "translateX(-110%)";
+    menuElement.classList.remove('menu--show');
+    menuOverlayElement.classList.remove('menu__overlay--show');
+    menuElement.addEventListener('transitionend', onTransitionEnd, false);
+  }
+
+  var touchStartPoint, touchMovePoint;
+
+  /*Swipe from edge to open menu*/
+
+  //`TouchStart` event to find where user start the touch
+  document.body.addEventListener('touchstart', function(event) {
+  	touchStartPoint = event.changedTouches[0].pageX;
+  	touchMovePoint = touchStartPoint;
+  }, false);
+  
+  //`TouchMove` event to determine user touch movement
+  document.body.addEventListener('touchmove', function(event) {
+  	touchMovePoint = event.touches[0].pageX;
+  	if (touchStartPoint < 10 && touchMovePoint > 30) {  		
+      menuElement.style.transform = "translateX(0)";
+  	}
+  }, false);
+
+  function onTransitionEnd() {
+  	if (touchStartPoint < 10) {
+  	  menuElement.style.transform = "translateX(0)";
+  	  menuOverlayElement.classList.add('menu__overlay--show');
+  	  menuElement.removeEventListener('transitionend', onTransitionEnd, false);	
+  	}
+  }
+})();
+
+//Preloader
+var preloader;
+
+function myFunction() {
+    preloader = setTimeout(showPage, 600);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("appcontent").style.display = "block";
+}
+
+//Register the service worker
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
 
@@ -7,13 +75,13 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-const eventsContainer = document.getElementById('events');
-if(eventsContainer){
+const eventsContainer = document.getElementById('matchStats');
+if(matchStatsContainer){
     fetch("events.json")
         .then(response => {
             return response.json();
         }).then(events => {
-            const eventsHTML = events.map(event => {
+            const eventsHTML = matchStats.map(event => {
                 return `<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__media">
                         <img class="article-image" src="${event.picture}" border="0" alt="">
@@ -30,9 +98,12 @@ if(eventsContainer){
                 </div>`;
             }).join("\n");
             
-            eventsContainer.innerHTML = eventsHTML;
+            matchStatsContainer.innerHTML = eventsHTML;
         });
 }
+
+
+
 
 // For second page
 const newsContainer = document.getElementById('news');
