@@ -106,8 +106,8 @@ if(eventsContainer){
 
 
 // For second page
-const newsContainer = document.getElementById('news');
-if(newsContainer){
+const articles = document.getElementById('articles');
+if(articles){
     fetch(" https://newsapi.org/v1/articles?source=talksport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5")
         .then(response => {
             return response.json();
@@ -129,7 +129,7 @@ if(newsContainer){
                 </div>`;
             }).join("\n");
             
-            newsContainer.innerHTML = newsHTML;
+            articles.innerHTML = newsHTML;
         });
 }
 

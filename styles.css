@@ -472,10 +472,6 @@ img.article-image {
     padding-bottom:60px;
 }
 
-#events {
-         text-align:center;
-     }
-
 
 table {
   
@@ -483,6 +479,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   width:100%;
+}
+
+abbr {
+    text-decoration: none;
 }
 
 caption {
@@ -501,13 +501,8 @@ tr:first-child {
   border-top: 0;
 }
 
-tr.highlighted-row {
-  background: #ffffdc;
-}
 
-tr.alt-row {
-  background: #eee;
-}
+
 
 th[scope="row"] {
   text-align: left;
@@ -540,7 +535,7 @@ label {
 #feedbackForm input[type=text]{
 	
 	margin-bottom: 15px;
-	max-width: 100%;
+	width: 100%;
 	
 	
    
@@ -550,6 +545,15 @@ label {
  
     
 }
+      
+      
+      
+      #feedbackForm {
+         
+          max-width:100%;
+      }
+      
+      
       
       #feedbackForm input[id=response] {
           
