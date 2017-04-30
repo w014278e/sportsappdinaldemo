@@ -472,6 +472,10 @@ img.article-image {
     padding-bottom:60px;
 }
 
+#events {
+         text-align:center;
+     }
+
 
 table {
   
@@ -563,6 +567,8 @@ label {
          width:100%;
       
   }
+     
+     
      
      #feedbackForm input[type=text]{
 	
