@@ -111,8 +111,8 @@ if(articles){
     fetch(" https://newsapi.org/v1/articles?source=talksport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5")
         .then(response => {
             return response.json();
-        }).then(news => {
-            const newsHTML = news.articles.map(article => {
+        }).then(articles => {
+            const newsHTML = news.articles.map(articles => {
                 return `<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__media">
                         <img class="article-image" src="${article.urlToImage}" border="0" alt="">
@@ -129,7 +129,7 @@ if(articles){
                 </div>`;
             }).join("\n");
             
-            articles.innerHTML = newsHTML;
+            articles.innerHTML = articlesHTML;
         });
 }
 
