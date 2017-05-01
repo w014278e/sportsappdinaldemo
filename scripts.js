@@ -77,7 +77,7 @@ if ('serviceWorker' in navigator) {
 
 const footballMatchStats = document.getElementById('events');
 if(footballMatchStats){
-    fetch("events.json")
+    fetch("footballMatchJSONinfo.json")
         .then(response => {
             return response.json();
         }).then(events => {
