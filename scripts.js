@@ -75,8 +75,8 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-const eventsContainer = document.getElementById('events');
-if(eventsContainer){
+const footballMatchStats = document.getElementById('events');
+if(footballMatchStats){
     fetch("events.json")
         .then(response => {
             return response.json();
@@ -98,7 +98,7 @@ if(eventsContainer){
                 </div>`;
             }).join("\n");
             
-            eventsContainer.innerHTML = eventsHTML;
+            footballMatchStats.innerHTML = eventsHTML;
         });
 }
 
