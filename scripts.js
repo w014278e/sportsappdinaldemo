@@ -93,7 +93,7 @@ if(footballMatchStats){
                         ${event.matchinfo}
                     </div>
                     <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="${event.link}" data-upgraded=",MaterialButton,MaterialRipple">Read more<span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></a>
+                       
                     </div>
                 </div>`;
             }).join("\n");
