@@ -516,7 +516,7 @@ img.article-image {
     
 }
 
-#map-container.offline-map {
+#nextMatchLocation.offline-map {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -526,7 +526,8 @@ img.article-image {
     padding-bottom:20px;
 }
 
-#map-container {
+#nextMatchLocation {
+    height:300px;
     padding-bottom:60px;
 }
 
