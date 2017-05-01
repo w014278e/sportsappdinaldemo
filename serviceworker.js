@@ -1,7 +1,7 @@
 var BASE_PATH = '/sportsappdinaldemo/';
 var CACHE_NAME = 'bgPWA-v12';
 var TEMP_IMAGE_CACHE_NAME = 'temp-cache-v1';
-var newsAPIJSON = "https://newsapi.org/v1/articles?source=talksport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5";
+var footballheadlinesJSON = "https://newsapi.org/v1/articles?source=talksport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5";
 var CACHED_URLS = [
  // HTML
     BASE_PATH + 'index.html',
@@ -125,7 +125,7 @@ self.addEventListener('fetch', function(event) {
         });
       })
     );
-  } else if (requestURL.href === newsAPIJSON) {
+  } else if (requestURL.href === footballheadlinesJSON) {
     event.respondWith(
       caches.open(CACHE_NAME).then(function(cache) {
         return fetch(event.request).then(function(networkResponse) {
