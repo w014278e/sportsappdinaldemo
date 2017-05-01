@@ -81,11 +81,11 @@
 </div>
         <h4>Next Match</h4>
         <p>Sat 12 April 2015<p>
-        <div id="googleMap" style="height: 300px;"></div>
+        <div id="map-container" style="height: 300px;"></div>
                 <script>
                 function initMap() {
                     var myLocation = {lat: 53.463059, lng: -2.291340};
-                    var map = new google.maps.Map(document.getElementById('googleMap'), {
+                    var map = new google.maps.Map(document.getElementById('map-container'), {
                     zoom: 16,
                     center: myLocation
                     });
