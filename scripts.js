@@ -92,9 +92,7 @@ if(footballMatchStats){
                     <div class="mdl-card__supporting-text">
                         ${event.matchinfo}
                     </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                       
-                    </div>
+                  
                 </div>`;
             }).join("\n");
             
