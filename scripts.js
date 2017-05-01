@@ -80,7 +80,7 @@ if(footballMatchStats){
     fetch("footballMatchJSONinfo.json")
         .then(response => {
             return response.json();
-        }).then(events => {
+        }).then(footballMatchJSONinfo => {
             const footballMatchJSONinfoHTML = footballMatchJSONinfo.map(event => {
                 return `<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__media">
