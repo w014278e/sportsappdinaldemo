@@ -75,13 +75,13 @@ if ('serviceWorker' in navigator) {
   });
 }
 
-const eventsContainer = document.getElementById('footballLatestStats');
+const eventsContainer = document.getElementById('events');
 if(eventsContainer){
     fetch("events.json")
         .then(response => {
             return response.json();
-        }).then(footballLatestStats => {
-            const eventsHTML = footballLatestStats.map(event => {
+        }).then(events => {
+            const eventsHTML = events.map(event => {
                 return `<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
                     <div class="mdl-card__media">
                         <img class="article-image" src="${event.picture}" border="0" alt="">
@@ -98,7 +98,7 @@ if(eventsContainer){
                 </div>`;
             }).join("\n");
             
-            eventsContainer.innerHTML = footballLatestStatsHTML;
+            eventsContainer.innerHTML = eventsHTML;
         });
 }
 
