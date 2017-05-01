@@ -1,5 +1,5 @@
 var BASE_PATH = '/sportsappdinaldemo/';
-var CACHE_NAME = 'bgPWA-v13';
+var CACHE_NAME = 'bgPWA-v14';
 var TEMP_IMAGE_CACHE_NAME = 'temp-cache-v1';
 var footballheadlinesJSON = "https://newsapi.org/v1/articles?source=talksport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5";
 var CACHED_URLS = [
@@ -49,7 +49,8 @@ var CACHED_URLS = [
    
     // Manifest
     BASE_PATH + 'manifest.json',
-    BASE_PATH + 'events.json',
+   
+    BASE_PATH + 'footballMatchJSONinfo.json',
   // CSS and fonts
     'https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en',
     'https://fonts.googleapis.com/icon?family=Material+Icons',
