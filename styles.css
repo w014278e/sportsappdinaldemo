@@ -349,8 +349,8 @@ a:link {
 }
 
 #copyrightarticle {
-    padding-top:50px;
-    padding-bottom:50px;
+    
+    padding-bottom:5px;
 }
 
 #feedback {
@@ -669,13 +669,13 @@ label {
      }
      div#footballHeadlines.mdl-grid.portfolio-max-width {
          margin-left:14px;
-         padding-bottom:30px;
+         
          width:96.5%;
          
      }
 
 div#footballHeadlines {
-    padding-bottom:30px;
+    
 }
      #feedbackForm input {
          width:100%;
