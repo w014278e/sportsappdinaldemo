@@ -377,28 +377,32 @@ form {
     display: inline-block;
     text-align: center;
     padding-bottom:50px;
+    width:50%;
     
 
 }
 
 
 #feedbackForm input[type=text] {
-	
+	margin-top:8px;
 	margin-bottom: 20px;
 	width: 100%;
 	
 	border: 1px solid #D6751E;
-    margin-bottom: 6px;
+    margin-bottom: 20px;
     padding: 5px !important;
 	
 	font-size: 0.9em;
+
  
     
 }
 
  #feedbackForm input[id=response] {
           
-          height:50px;
+          height:100px;
+     margin-top:8px;
+     margin-bottom:20px;
      
           
           
@@ -428,7 +432,11 @@ form {
    width:100%;
 }
 
-
+.mdl-card {
+     border-style: solid;
+    border-color:#D6751E;
+     border-width:2px;
+}
 
 
 
@@ -609,6 +617,12 @@ label {
           height:100%;
       }
       
+      form {
+          float:left;
+          padding-left:24px;
+          width:94%;
+      }
+      
       
 
 #feedbackForm input[type=text]{
@@ -631,6 +645,8 @@ label {
           
           
       }
+      
+      
   }
       
       @media only screen 
@@ -661,17 +677,25 @@ label {
           height:50px;
           
           
+          
       }
      
      
      
        #feedbackForm {
-          width:50%;
+          width:92.5%;
           height:50px;
+           float:left;
+           padding-left:57px;
+           
           
           
           
       }
+     
+     #feedbackForm label {
+         float:left;
+     }
      
      form {
          padding-bottom:80px;
