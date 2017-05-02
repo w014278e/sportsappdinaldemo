@@ -606,6 +606,20 @@ abbr {
           max-width:100%;
       }
       
+      .mdl-card {
+          margin-left:14px;
+          margin-bottom:30px;
+          width:92.2%;
+          
+          
+      }
+      
+      .mdl-card__supporting-text {
+          text-align:left;
+          margin-left:10px;
+          width:93.3%;
+      }
+      
       
 
 label {
@@ -653,6 +667,19 @@ label {
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
  { 
+     .mdl-card__supporting-text {
+         text-align:left;
+         margin-left:10px;
+         width:97.4%;
+     }
+         
+     }
+     .mdl-card {
+         margin-left:10px;
+         margin-bottom:40px;
+         width:97%;
+         
+     }
      #feedbackForm input {
          width:100%;
       
