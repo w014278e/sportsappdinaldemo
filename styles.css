@@ -674,10 +674,10 @@ label {
      }
          
      }
-     #footballHeadlines {
+     .mdl-card {
+         margin-left:14px;
+         margin-bottom:30px;
          
-         margin-bottom:40px;
-         width:97%;
          
      }
      #feedbackForm input {
