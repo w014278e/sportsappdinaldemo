@@ -653,6 +653,10 @@ label {
           
       }
       
+      .mdl-card__supporting-text {
+          max-width:100%;
+      }
+      
       
   }
       
