@@ -674,8 +674,10 @@ label {
      }
          
      }
-     .mdl-card {
+     #footballHeadlines {
          
+         margin-bottom:40px;
+         width:97%;
          
      }
      #feedbackForm input {
