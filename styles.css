@@ -424,6 +424,10 @@ form {
   
 }
 
+#offlineMode {
+   width:100%;
+}
+
 
 
 
@@ -527,8 +531,14 @@ img.article-image {
 }
 
 #nextMatchLocation {
+    margin-top:20px;
     height:300px;
     padding-bottom:60px;
+    margin-left:15px;
+    width:98%;
+    border-style: solid;
+    border-color:#D6751E;
+    border-width:2px;
 }
 
 
@@ -593,6 +603,11 @@ abbr {
 label {
 	float:left;
 }
+      
+      #nextMatchLocation {
+          width:91%;
+          height:100%;
+      }
       
       
 
@@ -660,6 +675,11 @@ label {
      
      form {
          padding-bottom:80px;
+     }
+     
+     #nextMatchLocation {
+         width:96%;
+        
      }
      
  }

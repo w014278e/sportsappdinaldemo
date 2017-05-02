@@ -79,7 +79,7 @@
         
     <h1>News</h1>
         <div id="footballMatchJSONinfo" class="mdl-grid portfolio-max-width">
-<p>Refresh or connect to the internet to view latest headlines.</p>
+<p id="offlineMode">Connect to the internet in order to view the latest match stats.</p>
              
 </div>
         <h4>Next Match</h4>
@@ -89,19 +89,20 @@
                 function initMap() {
                     var myLocation = {lat: 53.463059, lng: -2.291340};
                     var map = new google.maps.Map(document.getElementById('nextMatchLocation'), {
-                    zoom: 16,
+                    zoom: 13,
                     center: myLocation
                     });
                     var marker = new google.maps.Marker({
                     position: myLocation,
-                    map: map
+                    map: map,
+                        title: "Location for the next football match"
                     });
                 }
                 </script>
                 <script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4r037t9M4xqaHF8RR2p2mQqiWhgmeeAk&callback=initMap">
                 </script>
-        <p id="copyrightarticle">News Articles &copy BBC Sports News</p>
+        <p id="copyrightarticle">Match stats &copy BBC Sports News</p>
        
         
       </div>
