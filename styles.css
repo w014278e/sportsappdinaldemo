@@ -334,11 +334,6 @@ https://www.w3schools.com/howto/howto_css_loader.asp
     style="display:none;
 }
 
-div#footballHeadlines {
-    max-width:100%;
-    
-}
-
 
 
 
@@ -349,8 +344,8 @@ a:link {
 }
 
 #copyrightarticle {
-    
-    padding-bottom:5px;
+    padding-top:50px;
+    padding-bottom:50px;
 }
 
 #feedback {
@@ -427,7 +422,6 @@ form {
 .mdl-card {
      border-style: solid;
     border-color:#D6751E;
-    margin-bottom:30px;
      border-width:2px;
 }
 
@@ -626,8 +620,13 @@ label {
       
       form {
           float:left;
-          padding-left:24px;
+          
           width:94%;
+          max-width:95%;
+      }
+      
+      #feedbackform {
+           width:50%;
       }
       
       
@@ -653,14 +652,6 @@ label {
           
       }
       
-      .mdl-card__supporting-text {
-          max-width:100%;
-      }
-      
-      h3 {
-          line-height:0;
-      }
-      
       
   }
       
@@ -677,13 +668,13 @@ label {
      }
      div#footballHeadlines.mdl-grid.portfolio-max-width {
          margin-left:14px;
-         
+         padding-bottom:30px;
          width:96.5%;
          
      }
 
 div#footballHeadlines {
-    
+    padding-bottom:30px;
 }
      #feedbackForm input {
          width:100%;
@@ -715,10 +706,10 @@ div#footballHeadlines {
      
      
        #feedbackForm {
-          width:92.5%;
+          width:97.5%;
           height:50px;
            float:left;
-           padding-left:57px;
+           padding-left:20px;
            
           
           
