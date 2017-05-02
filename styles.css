@@ -674,10 +674,10 @@ label {
      }
          
      }
-     .mdl-card {
+     .mdl-cell mdl-card mdl-shadow--4dp portfolio-card {
          margin-left:14px;
          margin-bottom:30px;
-         
+         width:97%;
          
      }
      #feedbackForm input {
