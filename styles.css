@@ -674,7 +674,7 @@ label {
      }
          
      }
-     div#footballHeadlines {
+     div#footballHeadlines.mdl-grid.portfolio-max-width {
          margin-left:14px;
          margin-bottom:30px;
          width:97%;
