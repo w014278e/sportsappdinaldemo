@@ -601,7 +601,7 @@ abbr {
       }
       
       .portfolio-max-width {
-          margin-left:15px;
+         
       }
       
       .mdl-card {
@@ -746,6 +746,10 @@ div#footballHeadlines {
      @media only screen 
 and (min-device-width : 1024px) 
 and (max-device-width : 1366px) {
+    div#footballHeadlines.mdl-grid.portfolio-max-width {
+        margin-left:19px;
+        max-width:100%;
+    }
 }
      
  
