@@ -580,8 +580,6 @@ abbr {
 
 
 
-
-
  
 
  @media only screen 
@@ -601,6 +599,7 @@ abbr {
       }
       
       .portfolio-max-width {
+          margin-left:15px;
          
       }
       
