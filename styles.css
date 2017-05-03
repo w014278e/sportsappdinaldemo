@@ -598,7 +598,7 @@ abbr {
           max-width:100%;
       }
       
-      .portfolio-max-width {
+      .mdl-grid.portfolio-max-width {
           margin-left:15px;
          
       }
