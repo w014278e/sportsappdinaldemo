@@ -594,6 +594,10 @@ abbr {
           max-width:100%;
       }
       
+      .portfolio-max-width {
+          margin-left:15px;
+      }
+      
       .mdl-card {
          
           margin-bottom:30px;
@@ -666,11 +670,11 @@ label {
          width:97.4%;
      }
          
-     }
+     
      div#footballHeadlines.mdl-grid.portfolio-max-width {
          margin-left:14px;
          padding-bottom:30px;
-         width:96.5%;
+         width:96%;
          
      }
 
@@ -730,7 +734,7 @@ div#footballHeadlines {
         
      }
      
- }
+ 
 
 
       
