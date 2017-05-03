@@ -586,7 +586,13 @@ abbr {
 
  @media only screen 
   and (min-device-width: 320px) 
-     and (max-device-width: 480px) 
+     and (max-device-width: 736px)
+     and (orientation: portrait),
+     @media only screen 
+  
+     
+     
+    
          
   {
       
@@ -601,7 +607,7 @@ abbr {
       .mdl-card {
          
           margin-bottom:30px;
-          width:95.2%;
+          width:96%;
           
           
       }
@@ -626,8 +632,9 @@ label {
       form {
           float:left;
           
-          width:94%;
-          max-width:95%;
+          
+          width:92.5%;
+         margin-left:15px;
       }
       
       #feedbackform {
@@ -659,6 +666,8 @@ label {
       
       
   }
+
+
       
       @media only screen 
   and (min-device-width: 768px) 
@@ -733,6 +742,11 @@ div#footballHeadlines {
          width:96%;
         
      }
+     
+     @media only screen 
+and (min-device-width : 1024px) 
+and (max-device-width : 1366px) {
+}
      
  
 
