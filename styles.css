@@ -578,6 +578,12 @@ abbr {
     text-decoration: none;
 }
 
+.mdl-card__supporting-text {
+    width:100%;
+}
+
+
+
 
 
  
@@ -611,11 +617,7 @@ abbr {
           
       }
       
-      .mdl-card__supporting-text {
-         
-          
-          width:93.3%;
-      }
+      
       
       
 
