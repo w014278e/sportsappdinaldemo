@@ -87,10 +87,10 @@ if(footballMatchStats){
                         <img class="article-image" src="${event.image}" border="0" alt="">
                     </div>
                     <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">${event.match}</h2>
+                        <h2 class="mdl-card__title-text">${event.newsheadline}</h2>
                     </div>
                     <div class="mdl-card__supporting-text">
-                        ${event.matchinfo}
+                        ${event.headlineinformation}
                     </div>
                   
                 </div>`;
