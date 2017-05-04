@@ -37,7 +37,7 @@ var CACHED_URLS = [
     BASE_PATH + 'images/premierleaguelogo.jpg',
     BASE_PATH + 'images/skybetleague1logo.jpg',
     BASE_PATH + 'images/skybetleague2logo.jpg',
-    BASE_PATH + 'images/arsenallogo.ico,
+    
     BASE_PATH + 'images/eventsimages/article1.jpg',
     BASE_PATH + 'images/eventsimages/article2.jpg',
     BASE_PATH + 'images/eventsimages/article3.jpg',
