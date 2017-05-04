@@ -530,11 +530,23 @@ img.article-image {
     margin-top:20px;
     height:300px;
     padding-bottom:60px;
-    margin-left:15px;
-    width:98%;
+    
+    width:100%;
     border-style: solid;
     border-color:#D6751E;
     border-width:2px;
+}
+
+#nextmatchText {
+    display:inline-block;
+}
+
+.nextMatchLogos {
+    padding:5px;
+}
+
+#nextMatchInfo {
+    padding-bottom:10px;
 }
 
 
@@ -635,7 +647,7 @@ label {
 }
       
       #nextMatchLocation {
-          max-width:91%;
+          
           height:100%;
       }
       
@@ -744,7 +756,7 @@ div#footballHeadlines {
      }
      
      #nextMatchLocation {
-         width:96%;
+         
         
      }
      
