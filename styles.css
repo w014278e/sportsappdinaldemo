@@ -546,6 +546,15 @@ table {
   width:100%;
 }
 
+#premiereLeagueLogo {
+    margin-bottom:10px;
+}
+
+.resultsLogo {
+    margin-top:30px;
+    margin-bottom:20px;
+}
+
 caption {
   margin: 0 0 5px 0;
 }
