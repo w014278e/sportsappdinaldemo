@@ -130,7 +130,7 @@ if(footballHeadlinesView){
 
 
 // localstorage form
-function html5_storage_support() {
+function localstorage() {
   		//check to see if this browser support local storage: return true if so, false if not
 		try {
 			return 'localStorage' in window && window['localStorage'] !== null;
@@ -139,21 +139,21 @@ function html5_storage_support() {
 		}
 	}
   	function save() {
-  		if (html5_storage_support()) {
-  			//get the user-entered values from the two text fields:
+  		if (localstorage()) {
+  			
   			var name = document.getElementById("name").value;
   			var response = document.getElementById("response").value;
 
-  			//create two local-storage keys (name1, name2) and assign
-  			//each the respective value from the text fields:
+  			
+  			
   			localStorage.setItem('name',name);
   			localStorage.setItem('response',response);
   		}
   	}
 
   	function set() {
-  		if (html5_storage_support()) {
-  			//set the value of each text field from the stored values:
+  		if (localstorage()) {
+  			
   			document.getElementById('name').value = localStorage.getItem('name');
   			document.getElementById('response').value = localStorage.getItem('response');
   		}
