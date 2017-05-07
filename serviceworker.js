@@ -1,6 +1,6 @@
 var BASE_PATH = '/sportsappdinaldemo/';
-var CACHE_NAME = 'bgPWA-v15';
-var TEMP_IMAGE_CACHE_NAME = 'temp-cache-v1';
+var CACHE_NAME = 'bgPWA-v16';
+var TEMP_IMAGE_CACHE_NAME = 'temp-cache-v2';
 var footballheadlinesJSON = "https://newsapi.org/v1/articles?source=talksport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5";
 var CACHED_URLS = [
  // HTML
@@ -37,7 +37,8 @@ var CACHED_URLS = [
     BASE_PATH + 'images/premierleaguelogo.jpg',
     BASE_PATH + 'images/skybetleague1logo.jpg',
     BASE_PATH + 'images/skybetleague2logo.jpg',
-    
+    BASE_PATH + 'images/chelsealogo.gif',
+    BASE_PATH + 'images/arsenallogo.gif',
     BASE_PATH + 'images/eventsimages/article1.jpg',
     BASE_PATH + 'images/eventsimages/article2.jpg',
     BASE_PATH + 'images/eventsimages/article3.jpg',

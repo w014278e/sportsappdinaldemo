@@ -552,10 +552,11 @@ img.article-image {
 
 #nextmatchText {
     display:inline-block;
+    font-size:40px;
 }
 
 .nextMatchLogos {
-    padding:5px;
+    padding:20px;
 }
 
 #nextMatchInfo {
