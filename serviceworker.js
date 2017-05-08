@@ -1,6 +1,6 @@
 var BASE_PATH = '/sportsappdinaldemo/';
-var CACHE_NAME = 'bgPWA-v16';
-var TEMP_IMAGE_CACHE_NAME = 'temp-cache-v2';
+var CACHE_NAME = 'bgPWA-v18';
+var TEMP_IMAGE_CACHE_NAME = 'temp-cache-v4';
 var footballheadlinesJSON = "https://newsapi.org/v1/articles?source=talksport&sortBy=top&apiKey=2117f72d54d5433eba479863fb7ab3e5";
 var CACHED_URLS = [
  // HTML
