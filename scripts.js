@@ -57,7 +57,7 @@
 var preloader;
 
 function myFunction() {
-    preloader = setTimeout(showPage, 200);
+    preloader = setTimeout(showPage, 170);
 }
 
 function showPage() {
